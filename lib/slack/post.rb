@@ -79,7 +79,7 @@ module Slack
 			@config = config.merge(prune(opts))
 		end
 		
-		KnownConfigParams = [:username,:channel,:subdomain,:token,:icon_url,:icon_emoji].freeze
+		KnownConfigParams = [:username,:channel,:subdomain,:token,:icon_url,:icon_emoji,:parse,:unfurl_links,:unfurl_media].freeze
 		AttachmentParams = [:fallback,:text,:pretext,:color,:fields].freeze
 		FieldParams = [:title,:value,:short].freeze
 		
